@@ -1,0 +1,59 @@
+- Data objects (skills) 
+- Data Objects (skill modifications) 
+- Data Objects (events) 
+- State Machine (Skill Tree using data to make decision) 
+  
+
+            SKILLS 
+action1     action2     action3 
+modSkill1   modSkill2   modSkill3 
+  
+
+*EXAMPLE 
+                        FIREBALL 
+AttackIce mob           AttackFire mob          AttackAir mob 
+change efficiency       Effect Shape            Increase Intensity 
+    - more heat             - Change color          - more power / small size 
+    - less power            - Change power          - same mana cost 
+    - less mana cost        - More mana cost        - longer cast time 
+
+ 
+*DIAGRAM EXPLAINED 
+top =  Skill 
+second = event/action/trigger for change 
+third = skill modifications that will be affected by event and weighted to determine effect applied 
+third '-' =  example of this to affect of a skill 
+    
+
+Use different weighted values that when all added together equal a value then 
+modiffies an skill using those weights or uses a predetermined modifications 
+and removes chances for other modifications as an option 
+
+  
+maybe something like 
+    -  efficiency = 2.1 
+    -  power = 1.04 
+    -  learning = 2.9 
+        - size = 2 
+        - shape = .9
+
+Adds up to 5 (efficiency + power + learning = 5) requirements to calculate is 
+to kill a mob (maybe requirements) 
+2.1 + 1.04 + 2.9 = 5.19 
+  
+
+Current Skill - Fireball  
+    - damage = 25 
+    - mana cost = 15 
+    - size = 1x1 
+    - shape = circle   
+
+Apply weights - Fireball 
+    - damage = 27.8 
+    - mana cost = 13 
+    - size = 1.3x1.3 
+    - shape = circle 
+
+ 
+* weights values calculated first 
+Formula (damage) = (Spell value * (weighted Value + 1)) - (Spell Value * (1 - weighted Value))
