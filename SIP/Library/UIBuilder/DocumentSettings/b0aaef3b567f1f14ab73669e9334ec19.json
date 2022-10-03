@@ -1,0 +1,30 @@
+{
+    "UxmlGuid": "b0aaef3b567f1f14ab73669e9334ec19",
+    "UxmlPath": "Assets/SimUI.uxml",
+    "CanvasX": 6,
+    "CanvasY": 0,
+    "CanvasWidth": 1162,
+    "CanvasHeight": 726,
+    "MatchGameView": true,
+    "ZoomScale": 0.75,
+    "PanOffset": {
+        "x": 139.9873046875,
+        "y": 121.01225280761719
+    },
+    "ColorModeBackgroundOpacity": 1.0,
+    "ImageModeCanvasBackgroundOpacity": 1.0,
+    "CameraModeCanvasBackgroundOpacity": 1.0,
+    "EnableCanvasBackground": true,
+    "CanvasBackgroundMode": 2,
+    "CanvasBackgroundColor": {
+        "r": 0.05900675430893898,
+        "g": 0.24528300762176515,
+        "b": 0.22400051355361939,
+        "a": 255.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": "Main Camera"
+}

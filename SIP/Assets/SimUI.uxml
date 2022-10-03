@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="select" style="position: absolute; background-color: rgba(212, 212, 212, 0.48); height: 97px; width: 186px; top: 51px; left: 28px;">
+        <ui:Label text="Select Ability" display-tooltip-when-elided="true" style="position: absolute; top: 3px; left: 27px; width: 129px; height: 27px; font-size: 20px;" />
+        <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" name="abilityField" style="position: absolute; width: 150px; top: 42px; left: 14px; height: 33px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="info" style="background-color: rgba(212, 212, 212, 0.48); position: absolute; height: 508px; width: 213px; top: 178px; left: 23px;">
+        <ui:Label text="Ability Stats" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 20px;" />
+        <ui:ScrollView name="abilityData" style="flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Log" style="position: absolute; height: 445px; width: 863px; top: 40px; left: 254px; background-color: rgba(212, 212, 212, 0.48);">
+        <ui:Label text="Ability Log" display-tooltip-when-elided="true" style="font-size: 20px; -unity-text-align: upper-left; margin-left: 10px; padding-top: 3px;" />
+        <ui:ScrollView name="logData" style="flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="activation" style="position: absolute; height: 161px; width: 500px; top: 523px; left: 298px; background-color: rgba(212, 212, 212, 0.48);">
+        <ui:Label text="Activation Buttons" display-tooltip-when-elided="true" style="font-size: 20px; -unity-text-align: upper-center;" />
+        <ui:GroupBox style="flex-grow: 1; flex-direction: row;">
+            <ui:Button text="Update Ability&#10;Thought Using" display-tooltip-when-elided="true" name="attack" style="flex-grow: 1; white-space: normal; font-size: 22px;" />
+            <ui:Button text="Use&#10;Ability" display-tooltip-when-elided="true" name="use" style="flex-grow: 1; font-size: 22px;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:VisualElement name="description-container" style="background-color: rgba(212, 212, 212, 0.48); position: absolute; height: 156px; width: 264px; top: 527px; left: 868px;">
+        <ui:Label text="Description" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 20px;" />
+        <ui:Label text="Some Text that can be replaced. This will be for the Ability description. This text right now is just defualt text to see how it will look when has some actual text." display-tooltip-when-elided="true" name="description" style="font-size: 14px; flex-grow: 1; flex-wrap: nowrap; overflow: visible; -unity-text-align: upper-left; white-space: normal; color: rgb(12, 12, 12);" />
+    </ui:VisualElement>
+</ui:UXML>

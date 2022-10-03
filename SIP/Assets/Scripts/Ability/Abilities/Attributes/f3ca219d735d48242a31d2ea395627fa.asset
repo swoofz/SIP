@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5231635383404018455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af99d3a4fb5327442b39a36a24188a9b, type: 3}
+  m_Name: c058e5060bfdd484dbadbe70eaddcde1
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  guid: c058e5060bfdd484dbadbe70eaddcde1
+  position: {x: 428, y: 398}
+  effect: 0
+  effectDuration: 2
+  decreasEffectPercentage: 15
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd5d5955f038f548a4d5b32449b5cf0, type: 3}
+  m_Name: f3ca219d735d48242a31d2ea395627fa
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  guid: f3ca219d735d48242a31d2ea395627fa
+  position: {x: 191, y: 122}
+  enemy:
+  - {fileID: -5231635383404018455}
+  friendly:
+  - {fileID: 6305968461858580680}
+  self:
+  - {fileID: 740677783265173807}
+  - {fileID: 6305968461858580680}
+--- !u!114 &740677783265173807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13c978bdf096ca4aa935199efba6564, type: 3}
+  m_Name: 36c8aca2f52624d44a82fb7e6558b305
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  guid: 36c8aca2f52624d44a82fb7e6558b305
+  position: {x: 428, y: 116}
+  min: 20
+  max: 30
+--- !u!114 &6305968461858580680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c1387f0754a0a44ada641008bc5bb9, type: 3}
+  m_Name: 271bed39014dcb847a99697c6bf7d48d
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  guid: 271bed39014dcb847a99697c6bf7d48d
+  position: {x: 428, y: 247}
+  effect: 0
+  effectDuration: 1
+  increasEffectPercentage: 10

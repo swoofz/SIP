@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4188322450792449515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be1e20522a7328419c0b94890afad56, type: 3}
+  m_Name: f1d8f611148c5b64286bf5eeabc95c7f
+  m_EditorClassIdentifier: 
+  isRoot: 0
+  guid: f1d8f611148c5b64286bf5eeabc95c7f
+  position: {x: 312, y: 171}
+  min: 20
+  max: 35
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd5d5955f038f548a4d5b32449b5cf0, type: 3}
+  m_Name: 2c875bb2ae95fae47bd29e0b01ca8b6f
+  m_EditorClassIdentifier: 
+  isRoot: 1
+  guid: 2c875bb2ae95fae47bd29e0b01ca8b6f
+  position: {x: 155, y: 177}
+  enemy: []
+  friendly:
+  - {fileID: -4188322450792449515}
+  self:
+  - {fileID: -4188322450792449515}

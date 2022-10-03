@@ -1,0 +1,99 @@
+Scriptable Object Tree Design
+    - Id (id of Ability as name)
+        - Attachable object ...
+        - Attachable object ...
+        - Attachable object ...
+        - Attachable object ...
+
+Inspector Ability
+    - Attributes Tree
+    - On Use Tree
+    - Properties Tree
+
+
+Copy of one On Use System to another ability (Use menu)
+
+Three Scriptable Object Locations for the different type that will be connected to the Ability. One more Scriptable Object for the Ability.
+
+Ex:
+    Abilities/
+    |
+    |--- Attributes/
+    |   |___ exampleAbilty1AttrID.asset
+    |        |___ exampleAttr1.asset
+    |        |___ exampleAttr2.asset
+    |
+    |--- On Use/
+    |   |___ exampleAbilty1OnUseID.asset
+    |        |___ exampleNode1.asset
+    |        |___ exampleNode2.asset
+    |        |___ exampleNode3.asset
+    |        |___ exampleNode4.asset
+    |
+    |--- Properties/
+    |   |___ exampleAbilty1PropertiesID.asset
+    |
+    |___ exampleAbilty1.asset
+
+
+
+EditorView
+    - Visual Element (Container for Info such as grahpview)
+
+
+Nodes:
+    Attributes
+        - Targting
+            - ROOT*
+            - output:
+                - Self
+                - Friendly
+                - Enemy
+        - Damage
+            - Input
+            - Values:
+                - Max / Min Damage
+        - Heal
+            - Input
+            - Values:
+                - Max / Min Heal
+        - Buff
+            - Input
+            - Values:
+                - duration
+                - target affect
+                - amount increase stat
+        - Debuff
+            - Input
+            - Values:
+                - duration
+                - target affect
+                - amount decrease stat
+
+    On Use
+        - On Use
+            - ROOT*
+            - output
+                - On hit
+                - On Crit
+                - On Miss
+                - defualt (use)
+        - Is Oppsite (element)
+            - Input
+            - Output
+        - Is Same (element)
+            - Input
+            - Output
+        - Is Overpowered (Ability Level)
+            - Input
+            - Output
+        - Is Weak (Ability Level)
+            - Input
+            - Output
+        - Apply Weight
+            - END NODE*
+            - Input
+            - Values
+                - Wieght 1 (Power)
+                - Wieght 2 (Knowledge)
+                - Wieght 3 (Effiency)

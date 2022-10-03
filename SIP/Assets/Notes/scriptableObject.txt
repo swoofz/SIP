@@ -1,0 +1,43 @@
+- Base Object
+    - Abstract class
+    - has id/GUID
+
+- The Ability (ex. Fireball)
+    - Has Attribute, On Use, and Properties scriptable objects
+        connected to as values
+
+- Attribute
+    - id = Abitily id
+    - List of Self, Friendly, and Ememny Target Attributes
+    - Has Attribute scriptable objects such as
+        Damage, Heal, Buff, Debuff
+
+- On Use
+    - id = Abitily id
+    - Behaviors Tree that has a list of scriptable attached
+        to determine what weights on the ability will be affected
+
+- Properties
+    - id = Abitily id
+    - Just a scriptable object that stores the properties
+        of the ability
+
+
+*Attributes - Add To Attributes scriptable object, and get added to 
+    one of the lists on connection
+*All has own id
+- Damage
+- Heal
+- Buff
+- Debuff
+
+
+*Behaviors Tree - Add To On Use scriptable object
+*All has own id
+- On Crit
+- On Hit
+- On Miss
+- Is Same
+- Is Oppsites
+- Is Overppowered
+- Is Weak

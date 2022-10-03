@@ -1,0 +1,6 @@
+Youtube:
+	- AI Behaviour Tree Editor (part 2)
+	- https://www.youtube.com/watch?v=jhB_GFgS6S0&list=PLyBYG1JGBcd009lc1ZfX9ZN5oVUW7AFVy&index=23
+	
+	- Unity Dialogue Graph (save/load)
+	- https://www.youtube.com/watch?v=OMDfr1dzBco

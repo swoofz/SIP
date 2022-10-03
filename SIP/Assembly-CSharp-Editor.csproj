@@ -56,7 +56,22 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Editor\SpellCEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\GraphView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\OnUseNodeView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\NodeView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\SplitView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\AbilityPropNodeView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\AbilityPropView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\AbilityView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\OnUseGraphView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\AttributeGraphView.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\CustomAbilityEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\AbilityWindow\Views\AttrNodeView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Scripts\Editor\AbilityWindow\CustomAbilityEditor.uxml" />
+    <None Include="Assets\Scripts\Editor\AbilityWindow\CustomAbilityEditor.uss" />
+    <None Include="Assets\Scripts\Editor\AbilityWindow\Resources\AbilityGraph.uss" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

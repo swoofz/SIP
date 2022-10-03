@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <SplitView>
+        <ui:VisualElement name="left-container" style="position: absolute; width: 20%; height: 100%; border-right-width: 1px; border-right-color: rgb(36, 36, 36); border-left-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36);">
+            <ui:VisualElement name="ability-title-container" style="height: 20px; background-color: rgb(40, 40, 40); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-right-width: 0; border-right-color: rgb(0, 0, 0); border-left-width: 0; border-top-width: 0; border-bottom-width: 0;">
+                <ui:Label text="Abilities" display-tooltip-when-elided="true" name="ability-title" enable-rich-text="false" style="font-size: 12px; -unity-text-align: middle-center; width: 78px; background-color: rgb(56, 56, 56); color: rgb(255, 255, 255); -unity-font-style: normal; flex-grow: 1; border-top-left-radius: 3px; border-bottom-left-radius: 0; border-top-right-radius: 3px; border-bottom-right-radius: 0;" />
+            </ui:VisualElement>
+            <ui:ScrollView name="ability-container" horizontal-scroller-visibility="Hidden" style="flex-grow: 1; height: 458px;" />
+            <ui:Button text="Remove" display-tooltip-when-elided="true" name="remove-ability-btn" focusable="false" style="visibility: visible; display: flex;" />
+            <ui:Button text="Add Ability" display-tooltip-when-elided="true" name="add-ability-btn" enable-rich-text="false" focusable="false" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-container" style="position: absolute; width: 80%; height: 100%; top: 0; left: 20%; flex-grow: 0; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36);">
+            <ui:VisualElement name="tabs" style="height: 20px; background-color: rgb(37, 37, 37); flex-direction: row; flex-wrap: nowrap; justify-content: flex-start;">
+                <ui:Button text="Attrubites" name="tab1" class="tab" />
+                <ui:Button text="On Use" name="tab2" tabindex="1" class="tab" />
+                <ui:Button text="Properties" name="tab3" tabindex="2" class="tab" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tab-content" style="flex-grow: 1; flex-direction: row;" />
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>

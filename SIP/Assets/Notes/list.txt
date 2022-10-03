@@ -1,0 +1,64 @@
+Ability
+    - Create
+    - Delete
+    - Update
+
+Ability UIs
+    - Attributes
+        - Target options (Self, Friendly, Enemy)
+        - Attribute types (Damage, Heal, ect...)
+            - Customize Values
+    - On Use
+        - Apply Weigth by given value
+        - Node graph
+            - Root nodes (On Crit, On hit, ect..,)
+            - Connector nodes (Not sure what these are yet)
+            - End Nodes (Apply Weights)
+    - Properties
+        - Use Options (Free, Locked)
+        - Element (Fire, Water, Air, Earth)
+        - GameObject/Collision Point
+        - Description
+        - Instant/Cast
+        - Particles ---- 
+        - Projectile *(Alway on Locked, maybe on Free) --- 
+        - Animation ----
+
+Nodes:
+    - Targeting
+        - Damage
+        - Heal
+        - Buff
+        - DeBuff
+    - On Use
+        - Apply Weigths
+        - On Crit
+        - On Hit
+        - On Miss
+        - Is Same
+        - Is Oppsites
+        - Is Overpowered
+        - Is Weak
+
+
+Build the tree
+    - Action Node
+        - No Child
+        - End node basically
+    - Decorator Node
+        - One Child
+    - Composite Node
+        - List of child Nodes
+
+
+
+Action Node
+    - Apply Wieights
+
+
+Decorator Node
+
+
+Composite Node
+    - Use (root Node)
+    - Connectors
